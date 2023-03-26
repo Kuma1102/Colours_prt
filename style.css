@@ -12,9 +12,7 @@ body {
 }
 
 .col {
-  border: 1px solid black;
   flex: 1;
-  background: darkred;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -40,7 +38,7 @@ body {
   padding: 10px;
   transition: background 0.3s;
 }
-.col h2:hover {
-  background: rgba(0, 0, 0, 1);
+.col button:hover {
+  background: rgba(0, 0, 0, 0, 1);
   cursor: pointer;
 }

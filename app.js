@@ -7,17 +7,13 @@ function generateRandomColor() {
   }
   return "#" + color;
 }
+
 // function setRandomColors() {
 //   cols.forEach((col) => {
 //     col.style.background = generateRandomColor();
 //   });
 // }
 
-document.addEventListener("keydown", (event) => {
-  if (event.code.toLowerCase() === "space") {
-    setRandomColors();
-  }
-});
 function setRandomColors() {
   cols.forEach((col) => {
     const text = col.querySelector("h2");

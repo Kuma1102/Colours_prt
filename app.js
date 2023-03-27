@@ -14,12 +14,12 @@ function generateRandomColor() {
 // }
 
 document.addEventListener("keydown", (event) => {
+  event.preventDefault();
   if (event.code.toLowerCase() === "space") {
     setRandomColors();
   }
 });
 document.addEventListener("click", (event) => {
-  event.preventDefault();
   const type = event.target.dataset.type;
   if (type === "lock") {
     const node =

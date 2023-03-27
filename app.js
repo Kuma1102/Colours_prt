@@ -29,9 +29,15 @@ document.addEventListener("click", (event) => {
 
     node.classList.toggle("fa-lock-open");
     node.classList.toggle("fa-lock");
+  } else if (type === "copy") {
+    CopyToClickboard(event.target.textContent);
   }
 });
 
+function CopyToClickboard(text) {
+  navigator.clipboard.writeText(text);
+}
+console.log(navigator.clipboard.writeText());
 function setRandomColors() {
   cols.forEach((col) => {
     const isLocked = col.querySelector("i").classList.contains("fa-lock");
